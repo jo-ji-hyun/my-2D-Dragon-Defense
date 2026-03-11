@@ -2362,6 +2362,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1110130223}
   - component: {fileID: 1110130224}
+  - component: {fileID: 1110130225}
+  - component: {fileID: 1110130226}
   m_Layer: 5
   m_Name: Unit Keys
   m_TagString: Untagged
@@ -2420,6 +2422,69 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1110130225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110130222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9378d513520689143bfe0e0bd757e63a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitSpawner: {fileID: 1530167123}
+--- !u!114 &1110130226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110130222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 8b56b315f7ba88f45925bbd75140917b, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4defcefc-3baa-4a54-93f2-19c0c5246e01
+    m_ActionName: Player/Esc[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1110130225}
+        m_TargetAssemblyTypeName: MainKeyUI, Assembly-CSharp
+        m_MethodName: OnSpawn1
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2f92636d-e030-4226-b64e-b9d76548304e
+    m_ActionName: Player/1[/Keyboard/1]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &1124217872
 GameObject:
   m_ObjectHideFlags: 0
@@ -4070,6 +4135,7 @@ GameObject:
   - component: {fileID: 1530167121}
   - component: {fileID: 1530167120}
   - component: {fileID: 1530167122}
+  - component: {fileID: 1530167123}
   m_Layer: 0
   m_Name: Base Camp
   m_TagString: Untagged
@@ -4189,6 +4255,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1530167123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530167119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc94a778b8921494eb8bd04cd262c42f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unit: {fileID: 4803227646573307170, guid: 072c944d127ecb34ba020a34bd40384a, type: 3}
 --- !u!1 &1588592614
 GameObject:
   m_ObjectHideFlags: 0

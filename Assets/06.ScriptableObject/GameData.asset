@@ -20,3 +20,4 @@ MonoBehaviour:
     AtkDelay: 1
     Price: 100
     Icon: 
+    Cooltime: 3

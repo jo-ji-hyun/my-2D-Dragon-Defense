@@ -10,4 +10,5 @@ public class UnitData
     public int AtkDelay;
     public int Price;
     public string Icon;
+    public float Cooltime;
 }

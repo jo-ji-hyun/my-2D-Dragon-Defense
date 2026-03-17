@@ -12,7 +12,9 @@ public class UnitSpawner : MonoBehaviour
         {
             Debug.Log($"소환 {data.Name}, 공격력 {data.Atk}, Hp: {data.Hp}");
 
-            Instantiate(unit);
+            Vector3 pos = transform.position;
+
+            Instantiate(unit, pos, Quaternion.identity);
         } 
     }
 }
